@@ -1,0 +1,141 @@
+
+
+
+ 
+ [
+      {
+        "id":1,
+        "picture": "https://i.ibb.co/zHrBWGM/Clothing.png",
+        "title": "Product 1",
+        "category": "Electronics",
+        "category_bg_color": "#3498db",
+        "card_bg_color": "#B8CEF2",
+        "text_button_bg_color": "#e74c3c",
+        "description": "This is a high-quality electronics product.",
+        "price": "199.99"
+      },
+      {
+        "id":2,
+        "picture": "https://i.ibb.co/N9kdh6M/Education.png",
+        "title": "Product 2",
+        "category": "Clothing",
+        "category_bg_color": "#e74c3c",
+        "card_bg_color": "#DFDDF1",
+        "text_button_bg_color": "#2ecc71",
+        "description": "A fashionable clothing item for all occasions.",
+        "price": "49.99"
+      },
+      {
+        "id":3,
+        "picture": "https://i.ibb.co/zHrBWGM/Clothing.png",
+        "title": "Product 3",
+        "category": "Home & Garden",
+        "category_bg_color": "#f39c12",
+        "card_bg_color": "#A3DFCA",
+        "text_button_bg_color": "#34495e",
+        "description": "Enhance your home with this garden accessory.",
+        "price": "29.99"
+      },
+      {
+        "id":4,
+        "picture": "https://i.ibb.co/N9kdh6M/Education.png",
+        "title": "Product 4",
+        "category": "Books",
+        "category_bg_color": "#9b59b6",
+        "card_bg_color": "#39D39B",
+        "text_button_bg_color": "#e67e22",
+        "description": "A captivating novel that you won't be able to put down.",
+        "price": "14.99"
+      },
+      {
+        "id":5,
+        "picture": "https://i.ibb.co/txbN8Nb/Health.png",
+        "title": "Product 5",
+        "category": "Toys & Games",
+        "category_bg_color": "#3498db",
+        "card_bg_color": "#5CFE5C",
+        "text_button_bg_color": "#2ecc71",
+        "description": "Fun and educational toys for kids of all ages.",
+        "price": "39.99"
+      },
+      {
+        "id":6,
+        "picture": "https://i.ibb.co/GHTDkvP/Food.png",
+        "title": "Product 6",
+        "category": "Beauty & Personal Care",
+        "category_bg_color": "#f39c12",
+        "card_bg_color": "#9AB59A",
+        "text_button_bg_color": "#e74c3c",
+        "description": "Enhance your beauty with our premium skincare products.",
+        "price": "49.99"
+      },
+      {
+        "id":7,
+        "picture": "https://i.ibb.co/GHTDkvP/Food.png",
+        "title": "Product 7",
+        "category": "Sports & Outdoors",
+        "category_bg_color": "#2ecc71",
+        "card_bg_color": "#D9D2F6",
+        "text_button_bg_color": "#3498db",
+        "description": "Gear up for your outdoor adventures with this sports equipment.",
+        "price": "79.99"
+      },
+      {
+        "id":8,
+        "picture": "https://i.ibb.co/GHTDkvP/Food.png",
+        "title": "Product 8",
+        "category": "Food & Beverages",
+        "category_bg_color": "#e67e22",
+        "card_bg_color": "#D9D2F6",
+        "text_button_bg_color": "#9b59b6",
+        "description": "Delicious and gourmet food and beverages for your taste buds.",
+        "price": "19.99"
+      },
+      {
+        "id":9,
+        "picture": "https://i.ibb.co/GHTDkvP/Food.png",
+        "title": "Product 9",
+        "category": "Health & Wellness",
+        "category_bg_color": "#3919BF",
+        "card_bg_color": "#D9D2F6",
+        "text_button_bg_color": "#f39c12",
+        "description": "Invest in your health and well-being with these products.",
+        "price": "59.99"
+      },
+      {
+        "id":10,
+        "picture": "https://i.ibb.co/txbN8Nb/Health.png",
+        "title": "Product 10",
+        "category": "Electronics",
+        "category_bg_color": "#3919BF",
+        "card_bg_color": "#D0C1F1",
+        "text_button_bg_color": "#2ecc71",
+        "description": "Cutting-edge electronics for your tech needs.",
+        "price": "299.99"
+      },
+      {
+        "id":11,
+        "picture": "https://i.ibb.co/txbN8Nb/Health.png",
+        "title": "Product 11",
+        "category": "Clothing",
+        "category_bg_color": "#fffc3c",
+        "card_bg_color": "#EADEEE",
+        "text_button_bg_color": "#34495e",
+        "description": "Stylish and trendy clothing for every season.",
+        "price": "69.99"
+      },
+      {
+        "id":12,
+        "picture": "https://i.ibb.co/txbN8Nb/Health.png",
+        "title": "Product 12",
+        "category": "Home & Garden",
+        "category_bg_color": "#3919BF",
+        "card_bg_color": "#AEF3FD",
+        "text_button_bg_color": "#9b59b6",
+        "description": "Transform your living space with our home and garden products.",
+        "price": "39.99"
+      }
+    ]
+
+  
+    
