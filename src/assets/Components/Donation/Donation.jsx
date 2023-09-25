@@ -13,29 +13,17 @@ const Donation = () => {
             setDonations(donationDone)
         }
     },[])
-    console.log(donations2)
+    const [datalength,setDataLength]=useState(4)
+    const handleShowAll=()=>{
+        const totalData=donations2.length;
+        setDataLength(totalData)
+    }
     return (
-        <div className='grid grid-cols-2'>
+        <div>
+                    <div className='grid grid-cols-2 gap-5'>
             {
                
-               donations2.map((donation)=><div key={donation.id} donation={donation}>
-                    {/* {donation.id}
-                    {donation.image}
-                    <h2>Hello</h2> */}
-                    {/* <div className='grid grid-cols-2 gap-4'>
-                   <div className="card bg-base-100">
-                       <figure><img src={donation.picture} alt="Shoes" /></figure>
-                       <div className="card-body" style={{ backgroundColor: donation.card_bg_color }}>
-                           <button className="text-left  px-2" style={{ color: donation.text_button_bg_color, backgroundColor: donation.category_bg_color }}>{donation.category}</button>
-                           <h2 className="card-title" style={{ color: donation.text_button_bg_color }}>
-                               {donation.title}
-                           </h2>
-
-
-                       </div>
-                   </div>
-                   </div> */}
-
+               donations2.slice(0,datalength).map((donation)=><div key={donation.id} donation={donation}>
 
                 <Link to={`card/${donation.id}`}>
                 <div className="card card-side bg-base-100 shadow-xl">
@@ -54,6 +42,10 @@ const Donation = () => {
 
                </div>)
             }
+        </div>
+        <div className='flex flex-1'>
+            <button className='btn btn-success mx-auto my-5' style={{ display: datalength>4 ? 'none' : 'block' }} onClick={handleShowAll}>Show All</button>
+            </div>
         </div>
     );
 };
