@@ -11,11 +11,11 @@ const Cardlist = () => {
         .then(data=>setCards(data))
     },[])
 
-console.log(cards)
+// console.log(cards)
     return (
         <div className="grid grid-cols-4 gap-4">
             {
-                cards.map(card=><Card key={card.key} card={card}/>)
+                cards.map(card=><Card key={card.id} card={card}/>)
             }
         </div>
     );
