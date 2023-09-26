@@ -4,17 +4,17 @@ import Cardlist from '../Cardlist/Cardlist';
 
 const Home = () => {
 
-    const [cat,setCat]=useState([])
-    const handleSearch=()=>{
-      console.log(textInput.current.value)
+    const [cat, setCat] = useState("");
+    const onSearchclick=(searchTerm)=>{
+        setCat(searchTerm)
     }
 
     return (
         <div>
-           <Hero handleSearch={handleSearch}/>
+           <Hero onSearchclick={onSearchclick}/>
            <br></br>
            <div className='w-full mx-auto p-1'>
-            <Cardlist/>
+            <Cardlist cat={cat}/>
             </div>
            
         </div>

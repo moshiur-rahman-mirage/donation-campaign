@@ -23,14 +23,14 @@ const Carddetails = () => {
                 <div >
                     <img src={currentcard.picture} alt="" />
                     <div className="overlay">
-                        <button onClick={handleDonate} className="overlay-button" style={{background:`${currentcard.category_bg_color}`}}>Donate {currentcard.price}</button>
+                        <button onClick={handleDonate} className="overlay-button lg:text-left md:text-left text-center" style={{background:`${currentcard.category_bg_color}`}}>Donate {currentcard.price}</button>
                     </div>
                 </div>
             </div>
             <br/>
-            <h2 className="text-4xl">{currentcard.title}</h2>
+            <h2 className="text-4xl lg:text-left text-center">{currentcard.title}</h2>
             <br/>
-            <h2 className="text-xl">{currentcard.description}</h2>
+            <h2 className="text-xl lg:text-left text-center">{currentcard.description}</h2>
             <br/>
             <ToastContainer/>
         </div>

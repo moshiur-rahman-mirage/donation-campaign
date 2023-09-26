@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link, useLoaderData } from 'react-router-dom';
 import { getStoredDonation } from '../../Util/Util';
 import DoneDonation from '../DoneDonation/DoneDonation';
+import { data } from 'autoprefixer';
 
 const Donation = () => {
     const donations=useLoaderData();
@@ -18,13 +19,26 @@ const Donation = () => {
         const totalData=donations2.length;
         setDataLength(totalData)
     }
+
+    // const handleX=()=>{
+    //     const totalData=donations2.length;
+    //     setX(totalData)
+    // }
+
+// useEffect(()=>{
+//     handleX();
+// },[x])
+
+
+
+// console.log(x)
     return (
         <div>
-                    <div className='grid grid-cols-2 gap-5'>
+                    <div className='grid grid-cols-1 md:grid-cols-1  lg:grid-cols-2 lg:gap-5 gap-1'>
             {
                
                donations2.slice(0,datalength).map((donation)=><div key={donation.id} donation={donation}>
-
+                
                 <Link to={`card/${donation.id}`}>
                     <div className='h-full'>
                 <div className="card card-side bg-base-100 shadow-xl">
@@ -47,7 +61,7 @@ const Donation = () => {
             }
         </div>
         <div className='flex flex-1'>
-            <button className='btn btn-success mx-auto my-5' style={{ display: datalength>4 ? 'none' : 'block' }} onClick={handleShowAll}>Show All</button>
+            <button className='btn btn-success mx-auto my-5' style={{ display: datalength==4 ? 'block' : 'none' }} onClick={handleShowAll} >Show All</button>
             </div>
         </div>
     );
