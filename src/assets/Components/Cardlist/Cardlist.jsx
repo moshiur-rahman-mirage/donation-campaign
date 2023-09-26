@@ -13,7 +13,7 @@ const Cardlist = () => {
 
 // console.log(cards)
     return (
-        <div className="grid grid-cols-4 gap-4">
+        <div className="grid grid-cols-4 gap-5">
             {
                 cards.map(card=><Card key={card.id} card={card}/>)
             }

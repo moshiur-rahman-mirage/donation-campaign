@@ -1,6 +1,10 @@
+import { useState } from "react";
 
 
-const Hero = () => {
+const Hero = ({handleSearch}) => {
+    const [searchTerm,setSearchTerm]=useState('');
+
+
     return (
         <div>
             <div className="relative">
@@ -11,7 +15,7 @@ const Hero = () => {
                 <br></br>
                <input className=" mr-5 input input-bordered" type="text" name="search"></input>
                 <div className="bg-red-500 text-white px-4 rounded-md">
-                <button>Search</button>
+                <button onChange={handleSearch}>Search</button>
                 </div>
                </div>
                 

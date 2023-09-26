@@ -26,14 +26,17 @@ const Donation = () => {
                donations2.slice(0,datalength).map((donation)=><div key={donation.id} donation={donation}>
 
                 <Link to={`card/${donation.id}`}>
+                    <div className='h-full'>
                 <div className="card card-side bg-base-100 shadow-xl">
-                <figure><img src={donation.picture} alt="Shoes" /></figure>
-                <div className="card-body" style={{ backgroundColor: donation.card_bg_color }}>
-                    <p className=" w-fit card-title text-sm" style={{ color: donation.text_button_bg_color, backgroundColor: donation.category_bg_color }}>{donation.category}</p>
-                    <p>Click the button to watch on Jetflix app.</p>
-                    <div className="card-actions justify-start">
-                    <button className="btn" style={{background:`${donation.text_button_bg_color}`}}>View Details</button>
+                <img className='rounded-e-none' src={donation.picture} alt="Shoes" />
+                <div className="card-body h-full rounded-md" style={{ backgroundColor: donation.card_bg_color }}>
+                <button className="text-left w-fit " style={{backgroundColor: donation.text_button_bg_color,color:donation.category_bg_color}}>{donation.category}</button>
+                    <p className='text-xl font-bold'>{donation.title}</p>
+                    <p className='font-bold'>${donation.price}</p>
+                    <div className=" justify-start">
+                    <button className="btn text-white" style={{ background:`${donation.category_bg_color}`}}>View Details</button>
                     </div>
+                </div>
                 </div>
                 </div>
                 </Link>

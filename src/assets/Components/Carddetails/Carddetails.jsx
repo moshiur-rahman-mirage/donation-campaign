@@ -23,7 +23,7 @@ const Carddetails = () => {
                 <div >
                     <img src={currentcard.picture} alt="" />
                     <div className="overlay">
-                        <button onClick={handleDonate} className="overlay-button" style={{background:`${currentcard.text_button_bg_color}`}}>Donate {currentcard.price}</button>
+                        <button onClick={handleDonate} className="overlay-button" style={{background:`${currentcard.category_bg_color}`}}>Donate {currentcard.price}</button>
                     </div>
                 </div>
             </div>

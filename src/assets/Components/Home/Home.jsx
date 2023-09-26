@@ -1,13 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Hero from '../Hero/Hero';
 import Cardlist from '../Cardlist/Cardlist';
 
 const Home = () => {
+
+    const [cat,setCat]=useState([])
+    const handleSearch=()=>{
+      console.log(textInput.current.value)
+    }
+
     return (
         <div>
-           <Hero/>
+           <Hero handleSearch={handleSearch}/>
            <br></br>
-           <Cardlist/>
+           <div className='w-full mx-auto p-1'>
+            <Cardlist/>
+            </div>
+           
         </div>
     );
 };
