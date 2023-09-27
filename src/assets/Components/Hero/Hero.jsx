@@ -14,7 +14,7 @@ const Hero = ({onSearchclick}) => {
     return (
         <div>
             <div className="relative">
-                <img className="opacity-10 h-96 mx-auto w-[100%]" src="https://www.kindacode.com/wp-content/uploads/2022/06/night-sky.jpeg" />
+                <img className="opacity-10 h-96 mx-auto w-[100%]" src="https://i.ibb.co/KKqnhMk/team.jpg" />
                 <h1 className="absolute md:text-4xl text-2xl font-bold text-black top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2">
                 I Grow By Helping People In Need</h1>
                <div className="absolute text-4xl font-bold text-black top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex">
