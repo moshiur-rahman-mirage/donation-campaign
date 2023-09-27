@@ -3,10 +3,13 @@ import './Carddetails.css'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { saveDonation } from "../../Util/Util";
+import { useState } from "react";
 
 
 const Carddetails = () => {
     const cardsdata = useLoaderData();
+    const [donateCount,setDonateCount]=useState(0)
+    console.log(donateCount)
     const { id } = useParams();
     const idInt=parseInt(id);
     const currentcard = cardsdata.find(currentcard => currentcard.id == id)
@@ -15,6 +18,7 @@ const Carddetails = () => {
             position:"top-center"
         });
         saveDonation(idInt);
+        setDonateCount(donateCount+1)
     }
     return (
         <div>
